@@ -11,6 +11,9 @@ namespace ConsoleApplication1
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello Christophe!");
+            Console.WriteLine("Hello Kitty!");
+
+
 
 			Console.WriteLine("Simon Change corrected by Brice");
 
