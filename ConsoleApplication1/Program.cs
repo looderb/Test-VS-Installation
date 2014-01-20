@@ -10,6 +10,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello Christophe!");
 
             // Keep the console window open in debug mode.
             Console.WriteLine("Press any key to exit.");
