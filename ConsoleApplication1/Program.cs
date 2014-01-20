@@ -10,6 +10,8 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             //comments
+            int x = 0;
+            x++;
         }
     }
 }
