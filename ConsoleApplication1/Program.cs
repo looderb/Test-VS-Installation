@@ -11,8 +11,9 @@ namespace ConsoleApplication1
         {
             Console.WriteLine("Hello World!");
 
+			Console.WriteLine('Simon Change');
             // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
+			Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
     }
