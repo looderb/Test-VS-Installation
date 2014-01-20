@@ -13,7 +13,7 @@ namespace ConsoleApplication1
             Console.WriteLine("Hello Christophe!");
             Console.WriteLine("Hello Kitty!");
 
-
+            Console.WriteLine("Voilà la modif de la branche Brice!");
 
 			Console.WriteLine("Simon Change corrected by Brice");
 
