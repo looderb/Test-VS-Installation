@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Web;
@@ -13,9 +13,9 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
 			//Commentaire 1
-			//Commentaire 2
 			//Commentaire 3
 			//Commentaire 4
+
         }
 
         protected void DataBaseButton_Click(object sender, EventArgs e)
