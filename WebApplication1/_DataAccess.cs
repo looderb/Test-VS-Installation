@@ -10,6 +10,7 @@ namespace WebApplication1
     {
         public _DataAccess(Context context)
             : base(context, "_DataAccess", "ConnectionString")
+		// XX
         {
         }
 
