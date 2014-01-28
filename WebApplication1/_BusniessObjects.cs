@@ -20,6 +20,13 @@ namespace WebApplication1
             personne.Dispose();
         }
 
+        public void Search(ref DataSet dataSet, string nom)
+        {
+            _DataAccess personne = new _DataAccess(base.Context);
+            personne.Search(ref dataSet, nom);
+            personne.Dispose();
+        }
+
         public void List(ref DataSet dataSet)
         {
             _DataAccess personne = new _DataAccess(base.Context);
@@ -37,7 +44,7 @@ namespace WebApplication1
         public void Delete(Int32 personneId)
         {
             _DataAccess personne = new _DataAccess(base.Context);
-            personne.Delete( personneId);
+            personne.Delete(personneId);
             personne.Dispose();
         }
     }
