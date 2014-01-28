@@ -40,12 +40,12 @@ namespace WebApplication1
         /// Recherche une personne sur base du nom
         /// </summary>
         /// <param name="dataSet"></param>
-        /// <param name="nom"></param>
-        public void Search(ref DataSet dataSet, string nom)
+        /// <param name="value"></param>
+        public void Search(ref DataSet dataSet, string value)
         {
-            IDbCommand iDbCommand = CreateCommand("SELECT * FROM Personne WHERE Nom LIKE @Nom");
+            IDbCommand iDbCommand = CreateCommand("SELECT * FROM Personne WHERE Nom LIKE @Value OR Prenom LIKE @Value");
             iDbCommand.CommandType = CommandType.Text;
-            iDbCommand.Parameters.Add(this.CreateParameter("@Nom", nom));
+            iDbCommand.Parameters.Add(this.CreateParameter("@Value", value));
             this.Fill(dataSet, "Personne", iDbCommand);
         }
 

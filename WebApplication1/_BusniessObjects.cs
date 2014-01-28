@@ -29,11 +29,11 @@ namespace WebApplication1
         /// Donne la liste de toutes les personnes
         /// </summary>
         /// <param name="dataSet"></param>
-        /// <param name="nom"></param>
-        public void Search(ref DataSet dataSet, string nom)
+        /// <param name="value"></param>
+        public void Search(ref DataSet dataSet, string value)
         {
             _DataAccess personne = new _DataAccess(base.Context);
-            personne.Search(ref dataSet, nom);
+            personne.Search(ref dataSet, value);
             personne.Dispose();
         }
 
