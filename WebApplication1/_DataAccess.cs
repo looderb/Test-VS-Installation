@@ -31,5 +31,13 @@ namespace WebApplication1
         public void Save(ref DataSet dataSet)
         {
         }
+
+        public void Delete(Int32 pesonneId)
+        {
+            IDbCommand iDbCommand = CreateCommand("DELETE Personne WHERE PersonneId = @PersonneId");
+            iDbCommand.CommandType = CommandType.Text;
+            iDbCommand.Parameters.Add(this.CreateParameter("@PersonneId", pesonneId));
+            this.ExecuteNonQuery(iDbCommand);
+        }
     }
 }

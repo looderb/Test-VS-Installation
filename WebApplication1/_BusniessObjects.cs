@@ -33,5 +33,12 @@ namespace WebApplication1
             personne.Save(ref dataSet);
             personne.Dispose();
         }
+
+        public void Delete(Int32 personneId)
+        {
+            _DataAccess personne = new _DataAccess(base.Context);
+            personne.Delete( personneId);
+            personne.Dispose();
+        }
     }
 }
