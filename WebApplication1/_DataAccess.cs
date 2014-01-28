@@ -43,7 +43,7 @@ namespace WebApplication1
         /// <param name="value"></param>
         public void Search(ref DataSet dataSet, string value)
         {
-            IDbCommand iDbCommand = CreateCommand("SELECT * FROM Personne WHERE Nom LIKE @Value OR Prenom LIKE @Value");
+            IDbCommand iDbCommand = CreateCommand("SELECT * FROM Personne WHERE Nom LIKE @Value OR Prenom LIKE @Value ORDER BY Nom, Prenom");
             iDbCommand.CommandType = CommandType.Text;
             iDbCommand.Parameters.Add(this.CreateParameter("@Value", value));
             this.Fill(dataSet, "Personne", iDbCommand);
