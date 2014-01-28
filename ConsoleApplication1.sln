@@ -36,6 +36,9 @@ Global
 		{8F389D89-96D1-42A7-938D-AB88EA3F8502}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{8F389D89-96D1-42A7-938D-AB88EA3F8502}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = WebApplication1\WebApplication1.csproj
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
