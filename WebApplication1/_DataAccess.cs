@@ -28,6 +28,14 @@ namespace WebApplication1
             this.Fill(dataSet, "Personne", iDbCommand);
         }
 
+        public void Search(ref DataSet dataSet, string nom)
+        {
+            IDbCommand iDbCommand = CreateCommand("SELECT * FROM Personne WHERE Nom LIKE @Nom");
+            iDbCommand.CommandType = CommandType.Text;
+            iDbCommand.Parameters.Add(this.CreateParameter("@Nom", nom));
+            this.Fill(dataSet, "Personne", iDbCommand);
+        }
+
         public void Save(ref DataSet dataSet)
         {
         }
