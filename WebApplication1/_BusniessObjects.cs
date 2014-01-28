@@ -19,5 +19,12 @@ namespace WebApplication1
             personne.Detail(ref dataSet, personneId);
             personne.Dispose();
         }
+
+        public void List(ref DataSet dataSet)
+        {
+            _DataAccess personne = new _DataAccess(base.Context);
+            personne.List(ref dataSet);
+            personne.Dispose();
+        }
     }
 }

@@ -20,5 +20,12 @@ namespace WebApplication1
             iDbCommand.Parameters.Add(this.CreateParameter("@PersonneId", pesonneId));
             this.Fill(dataSet, "Personne", iDbCommand);
         }
+
+        public void List(ref DataSet dataSet)
+        {
+            IDbCommand iDbCommand = CreateCommand("SELECT * FROM Personne");
+            iDbCommand.CommandType = CommandType.Text;
+            this.Fill(dataSet, "Personne", iDbCommand);
+        }
     }
 }
