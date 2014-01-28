@@ -27,5 +27,9 @@ namespace WebApplication1
             iDbCommand.CommandType = CommandType.Text;
             this.Fill(dataSet, "Personne", iDbCommand);
         }
+
+        public void Save(ref DataSet dataSet)
+        {
+        }
     }
 }

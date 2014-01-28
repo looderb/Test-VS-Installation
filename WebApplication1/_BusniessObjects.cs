@@ -6,7 +6,7 @@ using eteach.Toolkit.BaseClasses;
 
 namespace WebApplication1
 {
-    public class _BusniessObjects : eteach.Toolkit.BaseClasses.BusinessObject
+    internal class _BusniessObjects : eteach.Toolkit.BaseClasses.BusinessObject
     {
         public _BusniessObjects(Context context)
             : base(context, "_BusniessObjects")
@@ -24,6 +24,13 @@ namespace WebApplication1
         {
             _DataAccess personne = new _DataAccess(base.Context);
             personne.List(ref dataSet);
+            personne.Dispose();
+        }
+
+        public void Save(ref DataSet dataSet)
+        {
+            _DataAccess personne = new _DataAccess(base.Context);
+            personne.Save(ref dataSet);
             personne.Dispose();
         }
     }
