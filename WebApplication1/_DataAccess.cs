@@ -31,7 +31,7 @@ namespace WebApplication1
         /// <param name="dataSet"></param>
         public void List(ref DataSet dataSet)
         {
-            IDbCommand iDbCommand = CreateCommand("SELECT * FROM Personne");
+            IDbCommand iDbCommand = CreateCommand("SELECT * FROM Personne ORDER BY Nom, Prenom");
             iDbCommand.CommandType = CommandType.Text;
             this.Fill(dataSet, "Personne", iDbCommand);
         }
