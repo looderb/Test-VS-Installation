@@ -57,7 +57,10 @@ namespace WebApplication1
         {
         }
 
-        //Suppression du record
+        /// <summary>
+        /// Suppression du record
+        /// </summary>
+        /// <param name="pesonneId"></param>
         public void Delete(Int32 pesonneId)
         {
             IDbCommand iDbCommand = CreateCommand("DELETE Personne WHERE PersonneId = @PersonneId");

@@ -13,6 +13,11 @@ namespace WebApplication1
         {
         }
 
+        /// <summary>
+        /// Donne le détail d'une personne
+        /// </summary>
+        /// <param name="dataSet"></param>
+        /// <param name="personneId"></param>
         public void Detail(ref DataSet dataSet, Int32 personneId)
         {
             _DataAccess personne = new _DataAccess(base.Context);
@@ -20,6 +25,11 @@ namespace WebApplication1
             personne.Dispose();
         }
 
+        /// <summary>
+        /// Donne la liste de toutes les personnes
+        /// </summary>
+        /// <param name="dataSet"></param>
+        /// <param name="nom"></param>
         public void Search(ref DataSet dataSet, string nom)
         {
             _DataAccess personne = new _DataAccess(base.Context);
@@ -27,6 +37,10 @@ namespace WebApplication1
             personne.Dispose();
         }
 
+        /// <summary>
+        /// Recherche une personne sur base du nom
+        /// </summary>
+        /// <param name="dataSet"></param>
         public void List(ref DataSet dataSet)
         {
             _DataAccess personne = new _DataAccess(base.Context);
@@ -34,6 +48,10 @@ namespace WebApplication1
             personne.Dispose();
         }
 
+        /// <summary>
+        /// Sauvegarde des records
+        /// </summary>
+        /// <param name="dataSet"></param>
         public void Save(ref DataSet dataSet)
         {
             _DataAccess personne = new _DataAccess(base.Context);
@@ -41,6 +59,10 @@ namespace WebApplication1
             personne.Dispose();
         }
 
+        /// <summary>
+        /// Suppression du record
+        /// </summary>
+        /// <param name="personneId"></param>
         public void Delete(Int32 personneId)
         {
             _DataAccess personne = new _DataAccess(base.Context);
